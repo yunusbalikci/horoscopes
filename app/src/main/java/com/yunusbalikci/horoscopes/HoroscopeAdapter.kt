@@ -1,6 +1,7 @@
 package com.yunusbalikci.horoscopes
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,7 +38,9 @@ class HoroscopeAdapter(private val mContext: Context,private val horoscopeList:L
         holder.logo_id.setImageResource(mContext.resources.getIdentifier(note.horos_pic,"drawable",mContext.packageName))
 
         holder.cardView.setOnClickListener {
-
+            val intent = Intent(mContext,DetailActivity::class.java)
+            intent.putExtra("noteObject",note)
+            mContext.startActivity(intent)
 
         }
     }

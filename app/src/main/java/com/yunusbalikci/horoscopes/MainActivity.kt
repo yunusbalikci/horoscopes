@@ -20,10 +20,16 @@ class MainActivity : AppCompatActivity() {
         binding.rv.setHasFixedSize(true)
         binding.rv.layoutManager = LinearLayoutManager(this)
 
+
+
         horoscopeList = ArrayList()
 
-        val k1 = Horoscopes("Aquarius","aquarius")
+        val k1 = Horoscopes("Aquarius","aquarius","asdasdasas")
         (horoscopeList as ArrayList<Horoscopes>).add(k1)
+
+        val k2 = Horoscopes("Aries","aries","asdasdasdasda")
+        (horoscopeList as ArrayList<Horoscopes>).add(k2)
+
 
 
         adapter = HoroscopeAdapter(this,horoscopeList)

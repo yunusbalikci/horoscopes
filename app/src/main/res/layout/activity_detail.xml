@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="#DBDFEA">
+
+    <ImageView
+        android:background="@drawable/custom_input"
+        android:id="@+id/imageViewPic"
+        android:layout_width="259dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aquarius" />
+
+    <TextView
+        android:id="@+id/textViewHorosName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="181dp"
+        android:fontFamily="casual"
+        android:text="Aquarius"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPic" />
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        android:layout_width="393dp"
+        android:layout_height="324dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#D1D1D2"
+        android:background="@drawable/custom_input"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="casual"
+        android:text="TextViewasdasddasdsadsadsadsadasasssssssssssssdadasdsa"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHorosName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
